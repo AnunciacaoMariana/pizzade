@@ -103,3 +103,36 @@ h1 {
   --body-color: hsl(0 0% 98%);
 }
 
+
+
+.dev h1 {
+  font: 400 3.5rem 'Dancing Script';
+  color: var(--title-color); 
+  }
+
+.dev .texto1 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+.dev .texto1 h1 {
+  margin-bottom: 1rem;
+}
+
+.dev .texto1 p {
+  margin-bottom: 2.5rem;
+}
+
+.imagem1 img {
+  max-width:200px;
+  max-height:150px;
+  width: auto;
+  height: auto;
+}
+
+.dev .imagem1 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
