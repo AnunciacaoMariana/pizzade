@@ -1,7 +1,7 @@
-*{
-  margin:0;
-  padding: 0; 
-  box-sizing: border-box
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -10,16 +10,49 @@
   width: 95%;
 }
 
-nav{
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
   display: flex;
-  justify-content:space-between;
+  margin-bottom: 2rem;
+  background-color: var(--body-color);
+  border-bottom: 1px solid #e4e4e4;
+  width: 100%;
+}
+
+main {
+  margin-top: 4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
   height: 4.5rem;
   align-items: center;
+  width: 100%;
+}
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+  background: red;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
 }
 
 img {
   width: 100%;
-  height: auto;  
+  height: auto;
 }
 
 a {
@@ -35,8 +68,8 @@ body {
 
 .logo h1 {
   font: 700 1.5rem 'Poppins', 'sans-serif';
-  color: var(--title-color); 
-  }
+  color: var(--title-color);
+}
 
 .logo span {
   color: var(--base-color);
@@ -47,30 +80,30 @@ h1 {
   color: var(--title-color);
 }
 
-.section {
+#section {
   padding: 1.5rem 0;
 }
 
-.grid { 
+#grid {
   display: grid;
   gap: 2rem;
 }
 
-.home .texto {
+#home .texto {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   text-align: center;
 }
 
-.home .texto h1 {
+#home .texto h1 {
   margin-bottom: 1rem;
 }
 
-.home .texto p {
+#home .texto p {
   margin-bottom: 1.5rem;
 }
 
-.home .imagem {
+#home .imagem {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -90,6 +123,14 @@ h1 {
   background: var(--base-color-alt);
 }
 
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1) 0%,
+    hsla(var(--hue), 65%, 88%, 0.34) 100%
+  );
+}
 
 :root {
   --header-height: 4.5rem;
@@ -103,12 +144,10 @@ h1 {
   --body-color: hsl(0 0% 98%);
 }
 
-
-
 .dev h1 {
   font: 400 3.5rem 'Dancing Script';
-  color: var(--title-color); 
-  }
+  color: var(--title-color);
+}
 
 .dev .texto1 {
   margin-left: 1.5rem;
@@ -125,8 +164,8 @@ h1 {
 }
 
 .imagem1 img {
-  max-width:200px;
-  max-height:150px;
+  max-width: 200px;
+  max-height: 150px;
   width: auto;
   height: auto;
 }
