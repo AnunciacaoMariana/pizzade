@@ -164,6 +164,44 @@ nav.show .menu {
   margin-right: 1.5rem;
 }
 
+#about .texto {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#about .texto h1 {
+  margin-bottom: 1rem;
+}
+
+#about .texto p {
+  margin-bottom: 1.5rem;
+}
+
+#about .imagem {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+#contact .texto {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#contact .texto h1 {
+  margin-bottom: 1rem;
+}
+
+#contact .texto p {
+  margin-bottom: 1.5rem;
+}
+
+#contact .imagem {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .button {
   background-color: var(--base-color);
   color: var(--text-color-light);
@@ -230,4 +268,23 @@ nav.show .menu {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   text-align: center;
+}
+
+.justify-text {
+  text-align:justify;
+}
+
+.card{
+  padding: 3.625rem 2rem;
+  box-shadow: var(--base-color);
+  border-bottom: .25rem solid var(--base-color);
+  border-bottom: .25rem .25rem 0 0;
+  text-align: center;
+}
+
+.card i{
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--base-color);
 }
