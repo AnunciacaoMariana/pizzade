@@ -41,7 +41,7 @@ nav {
 nav.show .menu {
   opacity: 1;
   visibility: visible;
-  background:var(--body-color);
+  background: var(--body-color);
   height: 100vh;
   width: 100vw;
   top: 0;
@@ -57,9 +57,9 @@ nav .menu {
 nav .icon-close {
   visibility: hidden;
   opacity: 0;
-  
+
   position: absolute;
-  right: 1.5rem; 
+  right: 1.5rem;
 }
 
 nav.show div.icon-close {
@@ -69,9 +69,9 @@ nav.show div.icon-close {
 
 .toggle {
   font-size: 1.5rem;
-  color: var(--base-color); 
-  cursor: pointer; 
- }     
+  color: var(--base-color);
+  cursor: pointer;
+}
 
 nav ul li {
   text-align: center;
@@ -86,9 +86,9 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover::after{
-  content:"";
-  width:100%;
+nav ul li a:hover::after {
+  content: '';
+  width: 100%;
   height: 3px;
   background: var(--base-color);
   position: absolute;
@@ -183,23 +183,52 @@ nav.show .menu {
   margin-right: 1.5rem;
 }
 
-#contact .texto {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+/* Página de contato */
+
+#contact .grid {
+  gap: 4rem;
+}
+
+#contacts .text p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+#contacts .button {
+  margin-top: 1.5rem;
+}
+
+#contacts .button i {
+  font-size: 1.5rem;
+  margin-right: 0.675rem;
+}
+
+#contacts ul.grid {
+  gap: 1.5rem;
+}
+
+#contacts ul li i {
+  color: var(--base-color);
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contacts .align_button {
   text-align: center;
 }
 
-#contact .texto h1 {
-  margin-bottom: 1rem;
+#contacts .container {
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#contact .texto p {
-  margin-bottom: 1.5rem;
+#contacts .text {
+  max-width: 25rem;
 }
 
-#contact .imagem {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+#contacts .align_button {
+  text-align: left;
 }
 
 .button {
@@ -271,20 +300,70 @@ nav.show .menu {
 }
 
 .justify-text {
-  text-align:justify;
+  text-align: justify;
 }
 
-.card{
+.card {
   padding: 3.625rem 2rem;
   box-shadow: var(--base-color);
-  border-bottom: .25rem solid var(--base-color);
-  border-bottom: .25rem .25rem 0 0;
+  border-bottom: 0.25rem solid var(--base-color);
+  border-bottom: 0.25rem 0.25rem 0 0;
   text-align: center;
 }
 
-.card i{
+.card i {
   display: block;
   margin-bottom: 1.5rem;
   font-size: 5rem;
   color: var(--base-color);
+}
+
+footer {
+  background: var(--base-color);
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social a {
+  margin-right: 2rem;
+}
+
+footer .container {
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer.section {
+  padding: 3.75rem 0;
+}
+
+footer .logo {
+  font: 700 2.5rem 'Poppins', 'sans-serif';
+  color: var(--title-color);
+}
+
+footer .logo span {
+  color: var(--body-color);
+}
+
+section .title {
+  margin-bottom: 1rem;
+}
+
+.section .subtitle {
+  font-size: var(--subtitle-font-size);
+}
+
+:root {
+  --title-font-size: 2.25rem;
+  --subtitle-font-size: 1.125rem;
 }
